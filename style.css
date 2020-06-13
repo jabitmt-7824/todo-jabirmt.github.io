@@ -1,0 +1,136 @@
+h3{
+	text-align: center;
+	font-size: 2rem;
+	padding: 0.7rem;
+}
+
+#todo-container{
+	background-color: grey;
+	width: 70%;
+	min-height: 24rem;
+	display: flex;
+	flex-direction: column;
+	margin: 4rem 15%;
+
+}
+
+/* input section lements styles  */
+
+#input-section{
+	background-color: white;
+	width: 80%;
+	font-size: 2rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin:1rem 10%;
+
+}
+
+#input-section label{
+	width: 5%;
+	align-self: center;
+}
+
+#input1{
+	width: 85%;
+	outline: none;
+}
+
+#add-button{
+	width: 10%;
+	display: none;
+	border:none;
+	border:0;
+	background-color: transparent;
+}
+
+#checked-section{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 10%;
+	color: white;
+}
+
+#checked-section input[type="radio"]{
+	display: none;
+}
+
+/* list view section elements styles */
+
+#list-view-section{
+	background-color: white;
+	margin: 2rem 10% ;
+	min-height: 10rem;
+}
+
+#list-view-section ul{
+	list-style: none;
+	padding: 1rem;
+}
+
+.lists{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding: 0.7rem;
+	margin-bottom: 4px;
+}
+
+.delete-btn{
+	width: 10%;
+}
+
+/* footer section lements styles */
+
+#footer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: 0 10%;
+	color:white;
+	justify-content: space-around;
+}
+
+#footer button{
+	border:none;
+	background-color: transparent;
+	color: white;
+}
+
+#task-left{
+	width: 60%;
+}
+
+#all{
+	width: 10%;
+}
+
+#completed{
+	width: 15%;
+}
+
+#uncompleted{
+	width: 15%;
+}
+
+
+
+@media all and (max-width: 700px)
+{
+	#todo-container{
+		width:100%;
+		margin: 2px 0;
+	}
+
+	.delete-btn{
+		width: 30%;
+	}
+}
+
+
+
