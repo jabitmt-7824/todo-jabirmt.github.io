@@ -7,24 +7,24 @@ input.addEventListener("keypress",function(){
 });
 
 function createItem(itemvalue){
-	 		var listItem=document.createElement('li');
-	 		var leftpart=document.createElement('div');
-	 		var checkBox = document.createElement("input");
-	 		var label = document.createElement("label");
-	 		var deleteButton = document.createElement("button");
-	 		deleteButton.classList.add("delete-btn");
-	 		listItem.classList.add("lists");
+	 var listItem=document.createElement('li');
+	 var leftpart=document.createElement('div');
+	 var checkBox = document.createElement("input");
+	 var label = document.createElement("label");
+	 var deleteButton = document.createElement("button");
+	 deleteButton.classList.add("delete-btn");
+	 listItem.classList.add("lists");
 
-	 		checkBox.type = "checkBox";
-	 		label.innerText=itemvalue;
-	 		deleteButton.innerText="Delete";
+	 checkBox.type = "checkBox";
+	 label.innerText=itemvalue;
+	 deleteButton.innerText="Delete";
 
-	 		leftpart.appendChild(checkBox);
-	 		leftpart.appendChild(label);
-	 		listItem.appendChild(leftpart);
-	 		listItem.appendChild(deleteButton);
-	 		lists.appendChild(listItem);
-	 	}
+	 leftpart.appendChild(checkBox);
+	 leftpart.appendChild(label);
+	 listItem.appendChild(leftpart);
+	 listItem.appendChild(deleteButton);
+	 lists.appendChild(listItem);
+}
 
 addbutton.addEventListener("click",function(){	
 	let v=input.value;
